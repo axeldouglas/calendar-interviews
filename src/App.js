@@ -1,7 +1,17 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+
+import { store, persistor } from './store';
 
 function App() {
-    return <div className="App">Calendar</div>;
+    return (
+        <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}>
+                <div className="App">Calendar</div>
+            </PersistGate>
+        </Provider>
+    );
 }
 
 export default App;

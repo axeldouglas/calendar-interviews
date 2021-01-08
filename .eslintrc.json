@@ -5,8 +5,13 @@
         "jest": true
     },
     "rules": {
-        "indent": ["error", 4, { "SwitchCase": 2 }],
-        "no-console": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "no-console": "warn",
         "camelcase": "off",
         "class-methods-use-this": "off",
         "radix": "off",
