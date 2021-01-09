@@ -1,20 +1,19 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects';
 import * as actionTypes from '../../actions/index';
 
-import * as api from '../../../services/api';
+import * as api from '../../../services/calendar/index';
 
 export function* getCalendarSaga({ payload }) {
     try {
         const data = yield call(api.getCalendar, payload);
 
         yield put({
-            type: actionTypes.GET_CALENDAR_SUCCESS,
+            type: actionTypes.CALENDAR_SUCCESS,
             payload: { calendar: data || {} }
         });
     } catch (error) {
-        // console.log('error: ', error);
         yield put({
-            type: actionTypes.GET_CALENDAR_ERROR,
+            type: actionTypes.CALENDAR_ERROR,
             payload: error
         });
     }

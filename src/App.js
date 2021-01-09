@@ -4,11 +4,13 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 
 import { store, persistor } from './store';
 
+import Main from './page/main';
+
 function App() {
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
-                <div className="App">Calendar</div>
+                <Main />
             </PersistGate>
         </Provider>
     );
