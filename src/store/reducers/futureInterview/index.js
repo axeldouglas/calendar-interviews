@@ -7,9 +7,9 @@ const initialState = {
 
 const reducer = (state = initialState, action = {}) => {
     switch (action.type) {
-        case actionTypes.CALENDAR_SUCCESS:
-            return { ...state, data: action.payload.calendar };
-        case actionTypes.CALENDAR_ERROR:
+        case actionTypes.FUTURE_INTERVIEW_SUCCESS:
+            return { ...state, data: action.payload.futureInterview };
+        case actionTypes.FUTURE_INTERVIEW_ERROR:
             return { ...state, error: action.payload.error };
         default:
             return state;
