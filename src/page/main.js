@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { compose } from 'recompose';
 
 import * as calendarActions from '../store/actions/calendar/index';
 
@@ -21,7 +20,4 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {};
 
-export default compose(
-    // withRouter,
-    connect(mapStateToProps, mapDispatchToProps)
-)(Main);
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

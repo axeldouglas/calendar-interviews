@@ -5,11 +5,11 @@ import * as api from '../../../services/calendar/index';
 
 export function* getCalendarSaga({ payload }) {
     try {
-        const data = yield call(api.getCalendar, payload);
+        const { data: calendar } = yield call(api.getCalendar, payload);
 
         yield put({
             type: actionTypes.CALENDAR_SUCCESS,
-            payload: { calendar: data || {} }
+            payload: { calendar }
         });
     } catch (error) {
         yield put({
