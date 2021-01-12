@@ -14,7 +14,7 @@ Teste pático.
 ## 📷 Screenshots
 
 <h1>
-    <img src="./public/app-screenshot.jpg" height="320">
+    <img src="./public/app-screenshot.jpg" height="450">
 </h1>
 
 
@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Todo
 
-- [ ] ...
+- [ ] Component Face Pile: add tooltip to show thumbnail name and hidden list names.
 
 ---
 
