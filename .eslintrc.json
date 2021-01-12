@@ -13,6 +13,7 @@
         ],
         "no-console": "warn",
         "camelcase": "off",
+        "no-extra-boolean-cast": "off",
         "class-methods-use-this": "off",
         "radix": "off",
         "consistent-return": "off",

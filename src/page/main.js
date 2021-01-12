@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { connect, useDispatch } from 'react-redux';
 
+import Button from '../components/button';
+
 import * as calendarActions from '../store/actions/calendar/index';
 
 function Main({ calendar }) {
@@ -11,7 +13,11 @@ function Main({ calendar }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    return <>Main Page</>;
+    return (
+        <>
+            Main Page <Button size="sm" text="Teste Axel" />
+        </>
+    );
 }
 
 const mapStateToProps = (state) => ({
