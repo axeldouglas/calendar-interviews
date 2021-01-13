@@ -2,15 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     position: relative;
-    ${({ size }) => size && `margin-left: calc(${size}px - 7px)`};
+    ${({ size }) =>
+        size &&
+        `
+        margin-left: calc(${size}px - 7px); 
+        height:${size}px;
+    `};
 `;
 export const Thumbnail = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
 
     background: #c4c4c4;
     color: #ffffff;
@@ -18,7 +21,14 @@ export const Thumbnail = styled.div`
     cursor: default;
     box-sizing: border-box;
     border: 0.8px solid #ffffff;
-    ${({ size }) => size && `border-radius: calc(${size}px / 2)`};
+
+    ${({ size }) =>
+        size &&
+        `
+        border-radius: calc(${size}px / 2);
+        width: ${size}px;
+        height: ${size}px;
+    `};
 
     ${({ src }) =>
         !!src.length &&
@@ -28,6 +38,7 @@ export const Thumbnail = styled.div`
         background-position: center center;
         background-size: cover;
     `}
+
     svg {
         ${({ size }) =>
             size &&

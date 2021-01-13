@@ -29,6 +29,7 @@ const Animals = () => {
     useEffect(() => {
         const randomPosition = Math.floor(Math.random() * animalsList.length);
         setAnimal(animalsList[randomPosition]);
+        // eslint-disable-next-line
     }, []);
 
     const renderIcon = () => {
