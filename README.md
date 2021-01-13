@@ -31,6 +31,14 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [ ] Component Face Pile: add tooltip to show thumbnail name and hidden list names.
 
+## References
+
+- FacePile
+    - [react-native-face-pile](https://github.com/peterpme/react-native-face-pile#readme)
+- NavTab
+    - [react-tabs-redux](https://github.com/patrik-piskay/react-tabs-redux)
+    - [react-bootstrap tabs](https://react-bootstrap.github.io/components/tabs/)
+
 ---
 
 <h4 align="center">

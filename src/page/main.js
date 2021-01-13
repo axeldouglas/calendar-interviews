@@ -3,6 +3,7 @@ import { connect, useDispatch } from 'react-redux';
 
 import Button from '../components/button';
 import FacePile from '../components/facePile';
+import { Nav, TabContent, TabLink } from '../components/navTabs';
 
 import * as calendarActions from '../store/actions/calendar/index';
 
@@ -36,7 +37,14 @@ function Main({ calendar }) {
     return (
         <>
             Button: <Button size="sm" text="Teste Axel" />
-            Face Pile <FacePile numFaces={2} faces={mockFacepile} />
+            Face Pile: <FacePile numFaces={2} faces={mockFacepile} />
+            Nav Tabs:
+            <Nav active="axel">
+                <TabLink tabKey="juh">Hi</TabLink>
+                <TabLink tabKey="axel">Hello</TabLink>
+                <TabContent tabKey="juh">Eu sou Juh</TabContent>
+                <TabContent tabKey="axel">Eu sou Axel</TabContent>
+            </Nav>
         </>
     );
 }
