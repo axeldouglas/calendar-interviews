@@ -12,7 +12,7 @@ const Button = ({
     ...rest
 }) => {
     const renderButton = () => {
-        // switch case when more the one type
+        // switch case when more then two types
         return (
             <Outline
                 text={text}

@@ -4,6 +4,7 @@ import { connect, useDispatch } from 'react-redux';
 import Button from '../components/button';
 import FacePile from '../components/facePile';
 import { Nav, TabContent, TabLink } from '../components/navTabs';
+import Badge from '../components/badge';
 
 import * as calendarActions from '../store/actions/calendar/index';
 
@@ -45,6 +46,16 @@ function Main({ calendar }) {
                 <TabContent tabKey="juh">Eu sou Juh</TabContent>
                 <TabContent tabKey="axel">Eu sou Axel</TabContent>
             </Nav>
+            Badge Pill:
+            <Badge
+                size="sm"
+                text="Teste Axel"
+                type="pill"
+                variant="warning-outline"
+            />
+            <br />
+            Badge:
+            <Badge text="Teste Axel" />
         </>
     );
 }
