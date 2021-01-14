@@ -6,6 +6,7 @@ import FacePile from '../components/facePile';
 import { Nav, TabContent, TabLink } from '../components/navTabs';
 import Badge from '../components/badge';
 import Dropdown from '../components/dropdown';
+import JobDescription from '../components/jobDescription';
 
 import { ReactComponent as Kiwi } from '../assets/svg/animals/kiwi.svg';
 
@@ -46,6 +47,21 @@ function Main({ calendar }) {
         {
             item: 'Cancel request',
             onClick: () => {}
+        }
+    ];
+
+    const skills = ['Machine Learning', 'Signal R', 'Dapper', 'Deep Learning'];
+    const badgeList = skills.map((skill, key) => (
+        <Badge key={`badge_${key}`} text={skill} />
+    ));
+    const mockJobDescriptionOptions = [
+        {
+            icon: <Kiwi />,
+            item: badgeList
+        },
+        {
+            icon: <Kiwi />,
+            item: 'Cancel request'
         }
     ];
 
@@ -95,6 +111,13 @@ function Main({ calendar }) {
                 size="lg"
                 text="Dropdown Axel"
                 options={mockDropdownOptions}
+            />
+            <hr />
+            Job description:
+            <JobDescription
+                type="icon"
+                icon={<Kiwi />}
+                options={mockJobDescriptionOptions}
             />
         </>
     );
