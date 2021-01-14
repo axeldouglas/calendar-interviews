@@ -63,11 +63,6 @@ export const Container = styled.span`
     box-sizing: border-box;
     cursor: default;
     border-radius: 3px;
-
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
     font-style: normal;
     font-weight: normal;
     text-align: center;

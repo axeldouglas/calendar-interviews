@@ -1,6 +1,8 @@
 import React from 'react';
 import { Default, Pill } from './components';
 
+import * as Styled from './styles';
+
 const Badge = ({
     type = 'default',
     variant = '',
@@ -33,7 +35,7 @@ const Badge = ({
                 );
         }
     };
-    return <>{renderBadge()}</>;
+    return <Styled.Wrapper>{renderBadge()}</Styled.Wrapper>;
 };
 
 export default Badge;
