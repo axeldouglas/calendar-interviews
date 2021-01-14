@@ -58,7 +58,6 @@ const handleSize = (size) => {
 };
 
 export const Container = styled.span`
-    width: 100%;
     align-items: center;
     box-sizing: border-box;
     cursor: default;
@@ -66,6 +65,7 @@ export const Container = styled.span`
     font-style: normal;
     font-weight: normal;
     text-align: center;
+    white-space: nowrap;
 
     color: ${({ outline, variant }) =>
         outline === true ? handleColor(variant) : handleTextColor(variant)};
