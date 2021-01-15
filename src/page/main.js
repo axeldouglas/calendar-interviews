@@ -7,6 +7,7 @@ import { Nav, TabContent, TabLink } from '../components/navTabs';
 import Badge from '../components/badge';
 import Dropdown from '../components/dropdown';
 import JobDescription from '../components/jobDescription';
+import { Table } from '../components/table';
 
 import { ReactComponent as Kiwi } from '../assets/svg/animals/kiwi.svg';
 
@@ -16,7 +17,7 @@ function Main({ calendar }) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(calendarActions.getCalendar());
+        !calendar.length && dispatch(calendarActions.getCalendar());
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -63,6 +64,12 @@ function Main({ calendar }) {
             icon: <Kiwi />,
             item: 'Cancel request'
         }
+    ];
+
+    const mockTableColumns = [
+        { title: 'Candidate', spanWidth: 3 },
+        { title: 'Interview Step', spanWidth: 2 },
+        { title: 'Scheduled time', spanWidth: 6 }
     ];
 
     return (
@@ -119,6 +126,9 @@ function Main({ calendar }) {
                 icon={<Kiwi />}
                 options={mockJobDescriptionOptions}
             />
+            <hr />
+            Table:
+            <Table columns={mockTableColumns} data={calendar} />
         </>
     );
 }

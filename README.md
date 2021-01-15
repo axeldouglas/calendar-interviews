@@ -1,11 +1,12 @@
 # Calendar Job Interviews
-
+ATTENTION: Table component is temporary, it must be refactored.
 # Indice
 
 - [Sobre](#-sobre)
 - [Screenshots](#-sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [To do](#todo)
+- [References](#references)
 
 ## 🔖 Sobre
 
@@ -29,6 +30,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Todo
 
+- [ ] **ATTENTION**: Table component is temporary, it must be refactored.
 - [ ] Component Face Pile: add tooltip to show thumbnail name and hidden list names.
 - [ ] Component Badge: improve types and variants. Add click action.
 
