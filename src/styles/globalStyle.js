@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
         
-        background: #e5e5e5;
+        background: #F7F7F7;
     }
 `;
 

@@ -24,8 +24,5 @@ export const Content = styled.div`
     white-space: wrap;
     span {
         margin: 0 8px 8px 0;
-        &:last-child {
-            margin: 0;
-        }
     }
 `;
