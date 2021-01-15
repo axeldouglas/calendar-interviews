@@ -29,6 +29,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Todo
 
+- [ ] ATTENTION: Table component must be refactored.
 - [ ] Component Face Pile: add tooltip to show thumbnail name and hidden list names.
 - [ ] Component Badge: improve types and variants. Add click action.
 

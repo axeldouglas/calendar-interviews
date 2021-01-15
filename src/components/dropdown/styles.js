@@ -11,7 +11,6 @@ const handleSize = (size) => {
     }
 };
 export const Wrapper = styled.div`
-    width: 100%;
     display: flex;
     position: relative;
     font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
