@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    width: 100%;
     display: flex;
     position: relative;
     font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
@@ -13,6 +12,7 @@ export const Wrapper = styled.div`
     font-size: 14px;
     line-height: 17px;
     color: #3b4146;
+    align-items: center;
 `;
 
 export const Toggle = styled.button`
@@ -32,9 +32,10 @@ export const Toggle = styled.button`
     background-color: transparent;
 
     svg {
-        height: 14px; //1rem
+        height: 1rem;
+        vertical-align: middle;
         path {
-            fill: #5c636a;
+            fill: #4f4f4f;
         }
     }
 
@@ -50,7 +51,7 @@ export const Body = styled.div`
     left: 0;
     right: auto;
     z-index: 1000;
-    min-width: 10rem;
+    min-width: 345px;
     min-height: 0.5rem;
     padding: 18px 0 38px 33px;
     margin: 0; // 0.125rem 0 0

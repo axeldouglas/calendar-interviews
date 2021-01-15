@@ -9,8 +9,11 @@ import Dropdown from '../components/dropdown';
 import JobDescription from '../components/jobDescription';
 
 import { ReactComponent as Kiwi } from '../assets/svg/animals/kiwi.svg';
+import { ReactComponent as ExclamationIcon } from '../assets/svg/exclamation-circle.svg';
 
 import * as calendarActions from '../store/actions/calendar/index';
+
+import * as Styled from './styles';
 
 function Main({ calendar }) {
     const dispatch = useDispatch();
@@ -66,7 +69,33 @@ function Main({ calendar }) {
     ];
 
     return (
-        <>
+        <Styled.Wrapper>
+            <Styled.Header>
+                <Styled.TitleContainer>
+                    <Styled.Title>
+                        Principal Product Manager @Driftwood sidecorp
+                        <Styled.Popover>
+                            <JobDescription
+                                type="icon"
+                                icon={<ExclamationIcon />}
+                                options={mockJobDescriptionOptions}
+                            />
+                        </Styled.Popover>
+                    </Styled.Title>
+                </Styled.TitleContainer>
+                <Styled.HeaderOptions>
+                    <Button size="lg" text="Edit job" />
+                    <Styled.FacePileContainer>
+                        <FacePile numFaces={2} faces={mockFacepile} />
+                    </Styled.FacePileContainer>
+                </Styled.HeaderOptions>
+            </Styled.Header>
+            <Styled.Navbar>
+                <Nav active="calendar">
+                    <TabLink tabKey="calendar">Calendar</TabLink>
+                    <TabLink tabKey="next_interviews">Next Interviews</TabLink>
+                </Nav>
+            </Styled.Navbar>
             Button:
             <Button size="sm" text="Teste Axel" />
             <Button size="lg" text="Teste MD" variant="danger" />
@@ -119,7 +148,7 @@ function Main({ calendar }) {
                 icon={<Kiwi />}
                 options={mockJobDescriptionOptions}
             />
-        </>
+        </Styled.Wrapper>
     );
 }
 

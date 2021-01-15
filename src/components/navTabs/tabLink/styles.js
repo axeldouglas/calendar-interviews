@@ -4,7 +4,6 @@ export const Link = styled.a`
     display: inline-block;
     margin-right: 35px;
     padding: 13px 0.5rem;
-    margin-bottom: 1rem;
     text-decoration: none;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 
