@@ -9,6 +9,7 @@ const Dropdown = ({
     text = '',
     size = 'md',
     icon,
+    direction = 'right',
     options = []
 }) => {
     const refDropdown = useRef();
@@ -43,7 +44,7 @@ const Dropdown = ({
             >
                 {type === 'icon' ? icon : text}
             </Styled.Toggle>
-            <Styled.Dropdown expanded={expanded}>
+            <Styled.Dropdown expanded={expanded} direction={direction}>
                 {!!options.length &&
                     options.map((item, key) => (
                         <Item

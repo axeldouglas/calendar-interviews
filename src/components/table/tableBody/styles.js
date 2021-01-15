@@ -17,10 +17,11 @@ export const GroupTitle = styled.h2`
     line-height: 17px;
     color: #3b4146;
     margin: 23px 0 12px 0;
+    padding: 0 50px;
 `;
 export const GroupRow = styled.div`
     display: flex;
-    padding: 0 40px;
+    padding: 0 50px;
     ${({ highlight }) => highlight && ` background: #D5F2FB`}
 `;
 export const Row = styled.div`

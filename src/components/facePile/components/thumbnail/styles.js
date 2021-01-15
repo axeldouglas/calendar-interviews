@@ -5,12 +5,11 @@ export const Container = styled.div`
     ${({ size }) =>
         size &&
         `
-        margin-left: calc(${size}px - 7px); 
+        margin-left: -7px; 
         height:${size}px;
     `};
 `;
 export const Thumbnail = styled.div`
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;

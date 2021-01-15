@@ -33,8 +33,7 @@ const TableBody = ({ listData = [] }) => {
             setUpcomingList(upcoming);
             setDoneList(done);
         }
-        // eslint-disable-next-line
-    }, []);
+    }, [listData]);
 
     const renderButton = (type, id) => {
         switch (type) {
@@ -116,6 +115,7 @@ const TableBody = ({ listData = [] }) => {
                     <Dropdown
                         type="icon"
                         icon={<ElipsisIcon />}
+                        direction="left"
                         options={getMenuOptions(type)}
                     />
                 </Styled.Row>

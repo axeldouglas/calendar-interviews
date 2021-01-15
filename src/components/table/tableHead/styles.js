@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #f2f2f2;
+    padding: 0 50px;
 `;
 
 export const Container = styled.div`
     display: flex;
-    padding: 0 40px;
+    border-bottom: 1px solid #f2f2f2;
 `;
 
 export const Title = styled.div`

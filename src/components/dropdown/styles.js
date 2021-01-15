@@ -71,8 +71,6 @@ export const Dropdown = styled.ul`
     display: ${({ expanded }) => (expanded ? `block` : `none`)};
     position: absolute;
     top: 0; // 100%
-    left: 0;
-    right: auto;
     z-index: 1000;
     min-width: 10rem;
     min-height: 0.5rem;
@@ -86,4 +84,8 @@ export const Dropdown = styled.ul`
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
+    ${({ direction }) =>
+        direction === 'right'
+            ? `left: 0; right: auto;`
+            : `left: auto; right: 0;`};
 `;
